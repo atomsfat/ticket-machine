@@ -1,0 +1,15 @@
+required:
+  - provider
+  - meta
+  - status
+properties:
+  id:
+    type: string
+  provider:
+    type: string
+  meta:
+    type: string
+  status:
+    type: string
+type: object
+

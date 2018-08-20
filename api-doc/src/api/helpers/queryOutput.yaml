@@ -1,0 +1,5 @@
+in: query
+name: queryOutput
+description: Query outputs using JMESPath query expression.
+required: false
+type: string

@@ -1,0 +1,33 @@
+required:
+  - name
+  - row
+  - col
+  - price
+  - status
+  - ticketID
+  - holdEnd
+  - type
+  - section
+properties:
+  id:
+    type: string
+  name:
+    type: string
+  row:
+    type: string
+  col:
+    type: string
+  price:
+    type: number
+    format: double
+  status:
+    type: string
+  type:
+    type: string
+  section:
+    type: string
+  ticketID:
+    type: string
+  holdEnd:
+    type: string
+type: object

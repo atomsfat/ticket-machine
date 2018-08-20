@@ -1,0 +1,23 @@
+tags:
+  - backend
+  - mock
+operationId: postTickets
+summary: Create tickets
+consumes:
+  - applicaton/json
+produces:
+  - application/json
+parameters:
+  - in: body
+    name: Tickets
+    schema:
+      type: array
+      items:
+        $ref: '#/definitions/Purchase'
+responses:
+  200:
+    description: Create tickets
+    schema:
+      $ref: '#/definitions/Purchase'
+
+

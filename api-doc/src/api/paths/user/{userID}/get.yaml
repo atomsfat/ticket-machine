@@ -1,0 +1,20 @@
+tags:
+  - webapp
+  - mock
+operationId: getUserByID
+summary: Get a basic info from user by userID  
+consumes:
+  - applicaton/json
+produces:
+  - application/json
+parameters:
+  - in: path
+    name: userID
+    description: User ID
+    required: true
+    type: string
+responses:
+  200:
+    description: Single user 
+    schema:
+      $ref: '#/definitions/User'

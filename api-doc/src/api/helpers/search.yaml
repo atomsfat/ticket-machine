@@ -1,0 +1,5 @@
+in: query
+name: q
+description: Search items by some property for example location.city=cdmx
+required: false
+type: string

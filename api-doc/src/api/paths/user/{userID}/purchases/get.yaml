@@ -1,0 +1,24 @@
+tags:
+  - webapp
+  - mock
+operationId: getPurchasesByUserID
+summary: Get purchases by userID 
+consumes:
+  - applicaton/json
+produces:
+  - application/json
+parameters:
+  - in: path
+    name: userID
+    description: User ID
+    required: true
+    type: string
+  - $ref: '#/parameters/pagination'
+responses:
+  200:
+    description: Get purchases by userID 
+    schema:
+      type: array
+      items:
+        $ref: '#/definitions/Purchase'
+      maxItems: 10

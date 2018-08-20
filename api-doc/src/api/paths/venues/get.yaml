@@ -1,0 +1,20 @@
+tags:
+  - mock
+  - webapp
+operationId: getPaginatedVenues 
+summary: Get latest Venues order by date DESC
+consumes:
+  - application/json
+produces:
+  - application/json
+parameters:
+  - $ref: '#/parameters/pagination'
+  - $ref: '#/parameters/queryOutput'
+responses:
+  200:
+    description: Get venues ordered by creation date
+    schema:
+      type: array
+      items:
+        $ref: '#/definitions/User'
+      maxItems: 10

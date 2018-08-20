@@ -1,0 +1,25 @@
+tags:
+  - admin
+  - mock
+operationId: putEvent
+summary: update an specific event 
+consumes:
+  - applicaton/json
+produces:
+  - application/json
+parameters:
+  - in: path
+    name: eventID
+    description: Event id
+    required: true
+    type: string
+  - in: body
+    name: Event
+    schema:
+      $ref: '#/definitions/Event'
+responses:
+  200:
+    description: Update an specific event 
+    schema:
+      $ref: '#/definitions/Event'
+

@@ -1,0 +1,25 @@
+tags:
+  - admin
+  - mock
+operationId: putVenue
+summary: Update specific venue
+consumes:
+  - applicaton/json
+produces:
+  - application/json
+parameters:
+  - in: path
+    name: venueID
+    description: Venue id
+    required: true
+    type: string
+  - in: body
+    name: Venue
+    schema:
+      $ref: '#/definitions/Venue'
+responses:
+  200:
+    description: Update specific Venue
+    schema:
+      $ref: '#/definitions/Venue'
+

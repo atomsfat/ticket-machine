@@ -1,0 +1,28 @@
+swagger: '2.0'
+info:
+  description: Ticket machine API spec
+  version: 1.0.1
+  title: Ticket machine API
+  contact:
+    name: '@atomsfat'
+  license:
+    name: Apache 2.0
+
+tags:
+- name: webapp
+  description: General endpoints, public and other secured by generalAuhtorizer
+- name: admin
+  description: Admin Backend endpoint, secured by adminAuthorizer
+- name: backend
+  description: Internal endpoint, secured by IAM 
+- name: production
+  description: End points ready to end-users/clients
+- name: mock
+  description: Mocked endpoints
+
+paths: !!inc/dir ['paths']
+definitions: !!inc/dir ['definitions', {recursive: false, allowEmpty: false}]
+parameters:
+  pagination: !!inc/file 'helpers/pagination.yaml'
+  queryOutput: !!inc/file 'helpers/queryOutput.yaml'
+  search: !!inc/file 'helpers/search.yaml'

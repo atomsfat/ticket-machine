@@ -1,0 +1,19 @@
+tags:
+  - webapp
+  - mock
+operationId: postPurchase
+summary: Create a Purchase attemp, on attemp tickets are created, seats are hold.
+consumes:
+  - applicaton/json
+produces:
+  - application/json
+parameters:
+  - in: body
+    name: Purchase
+    schema:
+      $ref: '#/definitions/Purchase'
+responses:
+  200:
+    description: Create an purchase
+    schema:
+      $ref: '#/definitions/Purchase'

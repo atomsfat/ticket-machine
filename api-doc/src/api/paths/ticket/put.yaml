@@ -1,0 +1,21 @@
+tags:
+  - backend
+  - mock
+operationId: updateTickets
+summary: Update tickets
+consumes:
+  - applicaton/json
+produces:
+  - application/json
+parameters:
+  - in: body
+    name: Tickets
+    schema:
+      type: array
+      items:
+        $ref: '#/definitions/Purchase'
+responses:
+  200:
+    description: Update tickets
+    schema:
+      $ref: '#/definitions/Purchase'

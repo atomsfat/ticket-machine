@@ -1,0 +1,22 @@
+tags:
+  - webapp
+  - mock
+operationId: getPaginatedEvents
+summary: Get latest events order by date DESC
+consumes:
+  - application/json
+produces:
+  - application/json
+parameters:
+  - $ref: '#/parameters/pagination'
+  - $ref: '#/parameters/queryOutput'
+  - $ref: '#/parameters/search'
+responses:
+  200:
+    description: Get latest events
+    schema:
+      type: array
+      items:
+        $ref: '#/definitions/Event'
+      maxItems: 10
+

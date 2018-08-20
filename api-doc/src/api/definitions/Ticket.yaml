@@ -1,0 +1,14 @@
+required:
+  - event
+  - seat
+  - purchaseID
+properties:
+  id:
+    type: string
+  event:
+    $ref: '#/definitions/Event'
+  seat:
+    $ref: '#/definitions/Seat'
+  purchaseID:
+    type: string
+type: object

@@ -1,0 +1,22 @@
+tags:
+  - backend
+  - mock
+operationId: postSeatSchema
+summary: Create seatSchema, a seat schema is the way seats are set to certain event.
+consumes:
+  - applicaton/json
+produces:
+  - application/json
+parameters:
+  - in: body
+    name: SeatSchema
+    schema:
+      $ref: '#/definitions/Purchase'
+responses:
+  200:
+    description: Create seat schema
+    schema:
+      $ref: '#/definitions/Purchase'
+
+
+

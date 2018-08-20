@@ -1,0 +1,26 @@
+required:
+  - name
+  - lat
+  - lon
+  - city
+  - country
+  - state
+  - address
+properties:
+  id:
+    type: string
+  name:
+    type: string
+  lat:
+    type: string
+  lon:
+    type: string
+  city:
+    type: string
+  country:
+    type: string
+  state:
+    type: string
+  address:
+    type: string
+type: object

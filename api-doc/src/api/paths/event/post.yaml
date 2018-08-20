@@ -1,0 +1,20 @@
+tags:
+  - admin
+  - mock
+operationId: postEvent
+summary: Create event 
+consumes:
+  - applicaton/json
+produces:
+  - application/json
+parameters:
+  - in: body
+    name: Event
+    schema:
+      $ref: '#/definitions/Event'
+responses:
+  200:
+    description: Create an event 
+    schema:
+      $ref: '#/definitions/Event'
+

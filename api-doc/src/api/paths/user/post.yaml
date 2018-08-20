@@ -1,0 +1,19 @@
+tags:
+  - webapp
+  - mock
+operationId: postUser 
+summary: Link a pool user to ticket-machine 
+consumes:
+  - applicaton/json
+produces:
+  - application/json
+parameters:
+  - in: body
+    name: Customer
+    schema:
+      $ref: '#/definitions/Customer'
+responses:
+  200:
+    description: Create an user 
+    schema:
+      $ref: '#/definitions/Customer'

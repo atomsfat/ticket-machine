@@ -1,0 +1,25 @@
+required:
+  - name
+  - endDate
+  - startDate
+  - seatSchemeID
+  - capacity
+properties:
+  id:
+    type: string
+  Venue:
+    $ref: '#/definitions/Venue'
+  name:
+    type: string
+  endDate:
+    type: string
+  startDate:
+    type: string
+  descriptionUrl:
+    type: string
+    description: URL with the html raw detail of the event
+  seatSchemeID:
+    type: string
+  capacity:
+    type: integer
+type: object

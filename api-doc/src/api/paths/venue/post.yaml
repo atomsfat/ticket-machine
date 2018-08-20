@@ -1,0 +1,20 @@
+tags:
+  - admin
+  - mock
+operationId: postVenue
+summary: Create a new venue
+consumes:
+  - applicaton/json
+produces:
+  - application/json
+parameters:
+  - in: body
+    name: Venue
+    schema:
+      $ref: '#/definitions/Venue'
+responses:
+  200:
+    description: Create an Venue
+    schema:
+      $ref: '#/definitions/Venue'
+

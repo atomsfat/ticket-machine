@@ -1,0 +1,24 @@
+tags:
+  - backend
+  - mock
+operationId: updatePurchase
+summary: Update a specific purchase this must be called after payment provider response.
+consumes:
+  - applicaton/json
+produces:
+  - application/json
+parameters:
+  - in: path
+    name: purchaseID 
+    description: Purchase id
+    required: true
+    type: string
+  - in: body
+    name: Purchase
+    schema:
+      $ref: '#/definitions/Purchase'
+responses:
+  200:
+    description: Update an specific purchase
+    schema:
+      $ref: '#/definitions/Purchase'

@@ -1,0 +1,14 @@
+required:
+  - pool_id
+  - pool_name
+  - external_id
+properties:
+  id:
+    type: string
+  pool_id:
+    type: string
+  external_id:
+    type: string
+  pool_name:
+    type: string
+type: object

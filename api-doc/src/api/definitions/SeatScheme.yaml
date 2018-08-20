@@ -1,0 +1,16 @@
+required:
+  - meta 
+  - capacity
+  - seats
+properties:
+  id:
+    type: string
+  meta:
+    type: string
+  capacity:
+    type: string
+  seats:
+    type: array
+    items: 
+      $ref: '#/definitions/Seat'
+type: object

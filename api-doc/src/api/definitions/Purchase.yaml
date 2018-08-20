@@ -1,0 +1,19 @@
+required:
+  - payment
+  - status
+  - userID
+properties:
+  id:
+    type: string
+  tickets:
+    type: array
+    items:
+      $ref: '#/definitions/Ticket'
+  payment:
+    $ref: '#/definitions/Payment'
+  status:
+    type: string
+  userID:
+    type: string
+    description: Booking user
+type: object
