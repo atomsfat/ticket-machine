@@ -1,23 +1,17 @@
-# About Ticket-machine
+# Ticket-machine API Spec
 
-Ticket-machine is a booking application, all the application is a API driven development.
+* Development mode
+    * Install dependencies
+        * Node v8.4.9
+        * npm install
+        
+   
+    * DEV server
+```bash
+npm start
+```
+* Deploy on S3
 
-## Architecture 
-
-### Architecture diagrams
-* Component diagram
-* AWS Deployment diagram
-
-## Project structure
-
-* [API SPEC](api-doc)
-* [Infra as a code (READY TO RUN)](infra)
-* Multiple language implementation
-	* [Java](java) 
-* Customer FE
-* Back Operation FE
-
-## Live 
-
-* [API SPEC](https://atoms-one-api-proposal.s3.us-west-2.amazonaws.com/proposal-api/index.html)
-
+```bash
+./publish-api-doc.sh <bucket-name>
+```
