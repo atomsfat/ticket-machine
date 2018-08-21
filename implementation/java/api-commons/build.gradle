@@ -1,0 +1,35 @@
+plugins {
+  id 'org.hidetake.swagger.generator' version '2.12.0'
+}
+
+dependencies {
+  swaggerCodegen 'io.swagger:swagger-codegen-cli:2.2.3'
+}
+
+swaggerSources {
+  api {
+    inputFile = file('../api-doc/dist/api-bundle.yaml')
+    code {
+      language = 'spring'
+      configFile = file('swagger-gen-config.json')
+      components = ['models']
+    }
+
+  }
+}
+
+sourceSets {
+  main {
+    java.srcDirs += ["${swaggerSources.api.code.outputDir}/src/main/java"]
+  }
+}
+
+compileJava{
+    dependsOn(generateSwaggerCode)
+}
+
+dependencies {
+  compile 'io.swagger:swagger-annotations:1.5.18'
+  compile 'javax.validation:validation-api:1.1.0.Final'
+  compile 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.4'
+}

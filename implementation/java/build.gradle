@@ -1,0 +1,25 @@
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+
+  }
+}
+allprojects {
+  apply plugin: 'java'
+
+
+
+  repositories {
+    maven { url "http://repo.spring.io/libs-release"}
+    mavenCentral()
+  }
+
+
+  group = project.groupId
+  sourceCompatibility = project.sourceCompatibility
+  targetCompatibility = project.sourceCompatibility
+  version = project.version
+
+}
