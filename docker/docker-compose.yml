@@ -1,0 +1,13 @@
+version: '2.2'
+services:
+  postgres:
+    build: postgres
+    environment:
+      - POSTGRES_PASSWORD=d3vs_rul3s
+    ports:
+      - "5432:5432"
+    volumes:
+      - devpslqdata:/var/lib/postgresql/data
+volumes:
+  devpslqdata:
+    name: dev-postgresql-volume
