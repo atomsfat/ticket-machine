@@ -1,0 +1,11 @@
+api-doc/.tern-port
+api-doc/dist
+api-doc/package-lock.json
+dist
+ticket-machine.iml
+*.tfstate
+*.tfstate.backup
+.idea/
+build
+api-doc.iml
+.terraform
