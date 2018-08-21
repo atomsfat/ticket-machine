@@ -9,3 +9,7 @@ ticket-machine.iml
 build
 api-doc.iml
 .terraform
+.gradle
+gradlew
+gradlew.bat
+implementation/java/gradle
