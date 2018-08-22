@@ -18,7 +18,7 @@ Ticket-machine is a booking application, all the application is a API driven dev
 * [API SPEC](api-doc)
 * [Infra as a code (READY TO RUN)](infra)
 * Multiple language implementation
-	* [Java](java) 
+	* [Java Spring Boot](implementation/java) 
 * Customer FE
 * Back Operation FE
 
