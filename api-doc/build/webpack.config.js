@@ -6,7 +6,7 @@ module.exports = {
   entry: path.resolve(__dirname, '..', 'src/swagger-ui-config.js'),
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist/api-html'),
+    path: path.resolve(__dirname, 'dist/ticketmachine-html'),
   },
   devtool: 'inline-source-map',
   devServer: {
@@ -29,7 +29,7 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin([
       { from: 'src/web' },
-      { from: 'src/api' },
+      { from: 'src/ticketmachine' },
     ]),
     new WebpackShellPlugin({
       onBuildStart: ['node build/prepare.js'],

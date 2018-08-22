@@ -4,7 +4,7 @@ import 'swagger-ui/dist/swagger-ui.css';
 window.onload = function windowload() {
   const ui = SwagerUI({
     dom_id: '#swagger-ui',
-    url: 'api-bundle.yaml',
+    url: 'ticketmachine-bundle.yaml',
     presets: [
       presets.apis,
     ],

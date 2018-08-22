@@ -1,2 +1,3 @@
 rootProject.name = 'ticket-machine'
-include 'api-commons'
+include 'api-pojos'
+include 'api-server'

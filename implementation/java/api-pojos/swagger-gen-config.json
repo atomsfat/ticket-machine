@@ -2,7 +2,7 @@
   "dateLibrary": "java8",
   "interfaceOnly" : true,
   "hideGenerationTimestamp" : true,
-  "modelPackage" : "org.atoms.api.model",
+  "modelPackage" : "org.atoms.ticketmachine.pojos",
   "apiPackage": "org.atoms.api",
   "invokerPackage": "invoker"
 }

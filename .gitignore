@@ -1,7 +1,8 @@
 api-doc/.tern-port
 api-doc/dist
 api-doc/package-lock.json
-ticket-machine.iml
+infra/*.iml
+*.iml
 *.tfstate
 *.tfstate.backup
 .idea/
