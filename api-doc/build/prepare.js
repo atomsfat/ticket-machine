@@ -3,7 +3,7 @@ const yamlinc = require('yaml-include');
 const fs = require('fs');
 const p = require('path');
 
-yamlinc.setBaseFile(p.join(__dirname, '../src/ticketmachine', 'ticketmachine-spec.yaml'));
+yamlinc.setBaseFile(p.join(__dirname, '../src/api', 'api-spec.yaml'));
 const src = fs.readFileSync(yamlinc.basefile, 'utf8');
 const ymlobj = yaml.load(src, { schema: yamlinc.YAML_INCLUDE_SCHEMA, filename: yamlinc.basefile });
 const dir = 'dist';

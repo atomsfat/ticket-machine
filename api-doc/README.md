@@ -1,12 +1,13 @@
 # Ticket-machine API Spec
 
 * Development mode
-    * Install dependencies
-        * Node v8.4.9
-        * npm install
+  * Install dependencies
+      * Node v8.4.9
+      * npm install
         
    
-    * DEV server
+  * DEV server
+    
 ```bash
 npm start
 ```
