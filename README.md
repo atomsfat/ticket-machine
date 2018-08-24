@@ -7,12 +7,16 @@ Ticket-machine is a booking application, all the application is a API driven dev
 ### Architecture diagrams
 * Component diagram
 * AWS Deployment diagram
+
+  * Networking
+  ![alt text][network]
+  
 * DB Diagram
 
-![alt text][logo]
+![alt text][db-schema]
 
-[logo]: doc/images/db-schema.png "db-schema"
-
+[db-schema]: doc/images/db-schema.png "db-schema"
+[network]: doc/images/network.png "network"
 ## Project structure
 
 * [API SPEC](api-doc)
