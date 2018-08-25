@@ -1,6 +1,6 @@
-package org.atoms.ticketmachine.Ticket;
+package org.atoms.ticketmachine.features.ticket;
 
-import org.atoms.ticketmachine.GenericController;
+import org.atoms.ticketmachine.features.GenericController;
 import org.atoms.ticketmachine.pojos.Ticket;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.PostMapping;

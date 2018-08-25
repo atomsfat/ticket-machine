@@ -1,4 +1,4 @@
-package org.atoms.ticketmachine.Ticket;
+package org.atoms.ticketmachine.features.ticket;
 
 import org.atoms.ticketmachine.jpa.Ticket;
 import org.springframework.data.jpa.repository.JpaRepository;

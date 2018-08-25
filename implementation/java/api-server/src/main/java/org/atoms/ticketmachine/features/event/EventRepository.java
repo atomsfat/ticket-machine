@@ -1,4 +1,4 @@
-package org.atoms.ticketmachine.event;
+package org.atoms.ticketmachine.features.event;
 
 import org.atoms.ticketmachine.jpa.Event;
 import org.springframework.data.jpa.repository.JpaRepository;

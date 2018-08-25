@@ -1,4 +1,4 @@
-package org.atoms.ticketmachine.venue;
+package org.atoms.ticketmachine.features.venue;
 
 import org.atoms.ticketmachine.jpa.Venue;
 import org.springframework.data.jpa.repository.JpaRepository;

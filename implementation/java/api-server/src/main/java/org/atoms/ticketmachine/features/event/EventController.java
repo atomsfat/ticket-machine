@@ -1,6 +1,6 @@
-package org.atoms.ticketmachine.event;
+package org.atoms.ticketmachine.features.event;
 
-import org.atoms.ticketmachine.GenericController;
+import org.atoms.ticketmachine.features.GenericController;
 import org.atoms.ticketmachine.pojos.Event;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

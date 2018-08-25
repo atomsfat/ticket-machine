@@ -1,4 +1,4 @@
-package org.atoms.ticketmachine.purchase;
+package org.atoms.ticketmachine.features.purchase;
 
 import org.atoms.ticketmachine.jpa.Purchase;
 import org.springframework.data.jpa.repository.JpaRepository;

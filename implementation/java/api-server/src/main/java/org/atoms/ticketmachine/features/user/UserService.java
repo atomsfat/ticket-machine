@@ -1,6 +1,6 @@
-package org.atoms.ticketmachine.user;
+package org.atoms.ticketmachine.features.user;
 
-import org.atoms.ticketmachine.GenericService;
+import org.atoms.ticketmachine.features.GenericService;
 import org.atoms.ticketmachine.jpa.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

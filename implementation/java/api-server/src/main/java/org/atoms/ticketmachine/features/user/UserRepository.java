@@ -1,4 +1,4 @@
-package org.atoms.ticketmachine.user;
+package org.atoms.ticketmachine.features.user;
 
 
 import org.atoms.ticketmachine.jpa.Customer;

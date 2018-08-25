@@ -1,4 +1,4 @@
-package org.atoms.ticketmachine;
+package org.atoms.ticketmachine.features;
 
 import org.atoms.ticketmachine.util.PaginationUtil;
 import org.springframework.data.domain.Page;

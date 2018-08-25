@@ -1,6 +1,6 @@
-package org.atoms.ticketmachine.user;
+package org.atoms.ticketmachine.features.user;
 
-import org.atoms.ticketmachine.GenericController;
+import org.atoms.ticketmachine.features.GenericController;
 import org.atoms.ticketmachine.pojos.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

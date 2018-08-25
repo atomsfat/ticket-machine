@@ -1,4 +1,4 @@
-package org.atoms.ticketmachine;
+package org.atoms.ticketmachine.features.jmespath;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;

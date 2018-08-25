@@ -1,6 +1,6 @@
-package org.atoms.ticketmachine.venue;
+package org.atoms.ticketmachine.features.venue;
 
-import org.atoms.ticketmachine.GenericService;
+import org.atoms.ticketmachine.features.GenericService;
 import org.atoms.ticketmachine.jpa.Venue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,6 @@
-package org.atoms.ticketmachine.purchase;
+package org.atoms.ticketmachine.features.purchase;
 
-import org.atoms.ticketmachine.GenericController;
+import org.atoms.ticketmachine.features.GenericController;
 import org.atoms.ticketmachine.pojos.Purchase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

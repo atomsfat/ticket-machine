@@ -1,4 +1,4 @@
-package org.atoms.ticketmachine;
+package org.atoms.ticketmachine.features;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

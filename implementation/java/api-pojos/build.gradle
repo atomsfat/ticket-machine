@@ -24,8 +24,8 @@ sourceSets {
   }
 }
 
-compileJava{
-    dependsOn(generateSwaggerCode)
+compileJava {
+  dependsOn(generateSwaggerCode)
 }
 
 dependencies {
