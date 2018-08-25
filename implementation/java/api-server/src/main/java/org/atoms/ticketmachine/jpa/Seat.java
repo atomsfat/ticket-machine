@@ -2,7 +2,11 @@ package org.atoms.ticketmachine.jpa;
 
 import lombok.Data;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.Version;
 import java.util.UUID;
 
 @Entity
@@ -17,7 +21,7 @@ public class Seat {
   private String column;
   private Double price;
   private Double commission;
-  private String Status;
+  private String status;
   private String section;
   private String type;
   @ManyToOne

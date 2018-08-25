@@ -2,7 +2,11 @@ package org.atoms.ticketmachine.jpa;
 
 import lombok.Data;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.Version;
 import java.util.List;
 import java.util.UUID;
 

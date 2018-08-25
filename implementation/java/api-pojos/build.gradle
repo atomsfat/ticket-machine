@@ -8,7 +8,7 @@ dependencies {
 
 swaggerSources {
   api {
-    inputFile = file('../../../api-doc/dist/api-bundle.yaml')
+    inputFile = file('../../../api-doc/dist/ticketmachine-bundle.yaml')
     code {
       language = 'spring'
       configFile = file('swagger-gen-config.json')

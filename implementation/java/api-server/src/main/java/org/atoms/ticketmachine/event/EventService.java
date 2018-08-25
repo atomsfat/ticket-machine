@@ -1,19 +1,20 @@
 package org.atoms.ticketmachine.event;
 
+import org.atoms.ticketmachine.GenericService;
 import org.atoms.ticketmachine.jpa.Event;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
 
-@org.springframework.stereotype.Service
-public class EventService {
+import java.util.function.Function;
+
+@Service
+public class EventService extends GenericService<Event,
+  org.atoms.ticketmachine.pojos.Event, EventRepository> {
 
   @Autowired
-  EventRepository eventRepository;
-
-  public Page<Event> findAll(Pageable pageable){
-    return eventRepository.findAll(pageable);
+  public EventService(final EventRepository eventRepository,
+                      final Function<Event, org.atoms.ticketmachine.pojos.Event> mapEntityToPojo,
+                      final Function<org.atoms.ticketmachine.pojos.Event, Event> mapPojoToEntity) {
+    super(eventRepository, mapEntityToPojo, mapPojoToEntity);
   }
-
 }
-

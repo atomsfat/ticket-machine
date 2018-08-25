@@ -3,7 +3,11 @@ package org.atoms.ticketmachine.jpa;
 import lombok.Data;
 import org.hibernate.annotations.Type;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.Version;
 import java.util.HashMap;
 import java.util.UUID;
 

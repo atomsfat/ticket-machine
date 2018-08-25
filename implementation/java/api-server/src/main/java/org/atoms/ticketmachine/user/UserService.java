@@ -1,28 +1,20 @@
 package org.atoms.ticketmachine.user;
 
+import org.atoms.ticketmachine.GenericService;
 import org.atoms.ticketmachine.jpa.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
 
-import java.util.Optional;
-import java.util.UUID;
+import java.util.function.Function;
 
-@org.springframework.stereotype.Service
-public class UserService {
+@Service
+public class UserService extends GenericService<Customer,
+  org.atoms.ticketmachine.pojos.Customer, UserRepository> {
 
   @Autowired
-  UserRepository userRepository;
-
-  public Page<Customer> findAll(Pageable pageable){
-    return userRepository.findAll(pageable);
-  }
-
-  public Customer save(Customer customer){
-    return userRepository.save(customer);
-  }
-
-  public Optional<Customer> findById(UUID uuid){
-    return  userRepository.findById(uuid);
+  public UserService(final UserRepository userRepository,
+                     final Function<Customer, org.atoms.ticketmachine.pojos.Customer> mapEntityToPojo,
+                     final Function<org.atoms.ticketmachine.pojos.Customer, Customer> mapPojoToEntity) {
+    super(userRepository, mapEntityToPojo, mapPojoToEntity);
   }
 }

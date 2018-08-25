@@ -2,7 +2,9 @@ package org.atoms.ticketmachine.jpa;
 
 import lombok.Data;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Version;
 import java.util.UUID;
 
 @Entity(name = "people")
