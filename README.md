@@ -2,6 +2,8 @@
 
 Ticket-machine is a booking application, all the application is a API driven development.
 
+This project is a POC for a clone of Ticket Master.
+
 ## Architecture 
 
 ### Architecture diagrams

@@ -1,6 +1,8 @@
 # Ticket-machine API Spec
 
-* Development mode
+
+* [Published API SPEC](https://atoms-one-api-proposal.s3.us-west-2.amazonaws.com/proposal-api/index.html)
+## Development mode
   * Install dependencies
       * Node v8.4.9
       * npm install
@@ -11,8 +13,10 @@
 ```bash
 npm start
 ```
-* Deploy on S3
+* Deploying on S3
 
 ```bash
 ./publish-api-doc.sh <bucket-name>
 ```
+
+
