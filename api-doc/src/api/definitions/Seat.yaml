@@ -11,23 +11,35 @@ required:
 properties:
   id:
     type: string
+    pattern: '[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'
+    format: uuid
   name:
     type: string
+    faker: 'lorem.slug'
   row:
     type: string
+    maxLength: 10
   col:
     type: string
+    maxLength: 10
   price:
     type: number
     format: double
+    faker: 'finance.amount'
   status:
     type: string
+    enum: ['ON_HOLD', 'SOLD', 'CANCELED']
   type:
     type: string
+    enum: ['GENERAL', 'SEAT']
   section:
     type: string
   ticketID:
     type: string
+    pattern: '[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'
+    format: uuid
   holdEnd:
     type: string
+    format: date-time
+    faker: 'date.future'
 type: object

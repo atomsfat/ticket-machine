@@ -5,11 +5,18 @@ required:
 properties:
   id:
     type: string
+    pattern: '[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'
+    format: uuid
   provider:
     type: string
+    faker: 'company.companyName'
+    maxLength: 120
+    minLength: 20
   meta:
     type: string
+    maxLength: 255
   status:
     type: string
+    enum: ['COMPLETED', 'PENDING', 'FRAUD', 'REFUND', 'CANCELED']
 type: object
 

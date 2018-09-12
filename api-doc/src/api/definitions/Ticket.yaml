@@ -5,10 +5,14 @@ required:
 properties:
   id:
     type: string
+    pattern: '[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'
+    format: uuid
   event:
     $ref: '#/definitions/Event'
   seat:
     $ref: '#/definitions/Seat'
   purchaseID:
     type: string
+    pattern: '[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'
+    format: uuid
 type: object

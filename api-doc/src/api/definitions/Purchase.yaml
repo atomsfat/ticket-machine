@@ -5,6 +5,8 @@ required:
 properties:
   id:
     type: string
+    pattern: '[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'
+    format: uuid
   tickets:
     type: array
     items:
@@ -15,5 +17,7 @@ properties:
     type: string
   userID:
     type: string
+    pattern: '[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'
+    format: uuid
     description: Booking user
 type: object

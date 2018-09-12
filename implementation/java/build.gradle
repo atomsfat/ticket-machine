@@ -9,6 +9,7 @@ buildscript {
 allprojects {
   apply plugin: 'java'
 
+
   if (!it.name.equals('api-pojos')) {
     apply plugin: 'checkstyle'
     checkstyle{

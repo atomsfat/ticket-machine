@@ -9,18 +9,37 @@ required:
 properties:
   id:
     type: string
+    pattern: '[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'
+    format: uuid
   name:
     type: string
+    faker: 'company.companyName'
+    maxLength: 120
+    minLength: 20
   lat:
     type: string
+    faker: 'address.latitude'
   lon:
     type: string
+    faker: 'address.longitude'
   city:
     type: string
+    faker: 'address.city'
+    maxLength: 255
+    minLength: 5
   country:
     type: string
+    faker: 'address.country'
+    maxLength: 255
+    minLength: 5
   state:
     type: string
+    faker: 'address.state'
+    maxLength: 255
+    minLength: 5
   address:
     type: string
+    faker: 'address.streetAddress'
+    maxLength: 255
+    minLength: 5
 type: object

@@ -5,10 +5,17 @@ required:
 properties:
   id:
     type: string
+    pattern: '[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'
+    format: uuid
   pool_id:
     type: string
+    maxLength: 255
+    fake: 'random.alphaNumeric'
   external_id:
     type: string
+    maxLength: 255
+    fake: 'random.alphaNumeric'
   pool_name:
     type: string
+    maxLength: 255
 type: object

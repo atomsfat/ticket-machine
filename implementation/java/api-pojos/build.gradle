@@ -3,7 +3,7 @@ plugins {
 }
 
 dependencies {
-  swaggerCodegen 'io.swagger:swagger-codegen-cli:2.2.3'
+  swaggerCodegen 'io.swagger:swagger-codegen-cli:2.2.1'
 }
 
 swaggerSources {
@@ -23,6 +23,7 @@ sourceSets {
     java.srcDirs += ["${swaggerSources.api.code.outputDir}/src/main/java"]
   }
 }
+
 
 compileJava {
   dependsOn(generateSwaggerCode)

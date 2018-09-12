@@ -7,17 +7,24 @@ required:
 properties:
   id:
     type: string
+    pattern: '[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'
+    format: uuid
   Venue:
     $ref: '#/definitions/Venue'
   name:
     type: string
   endDate:
     type: string
+    format: date-time
+    faker: 'date.soon'
   startDate:
     type: string
+    format: date-time
+    faker: 'date.soon'
   descriptionUrl:
     type: string
     description: URL with the html raw detail of the event
+    faker: 'internet.url'
   seatSchemeID:
     type: string
   capacity:

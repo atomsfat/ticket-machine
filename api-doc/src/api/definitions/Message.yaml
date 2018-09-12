@@ -8,4 +8,5 @@ properties:
   description:
     type: string
     description: Details of the error
+    maxLength: 255
 type: object
