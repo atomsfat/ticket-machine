@@ -11,9 +11,11 @@ properties:
     type: string
     maxLength: 255
   capacity:
-    type: string
+    type: integer
+    minimum: 1
   seats:
     type: array
     items: 
       $ref: '#/definitions/Seat'
+      minItems: 1
 type: object

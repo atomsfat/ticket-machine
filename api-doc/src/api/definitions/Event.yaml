@@ -29,4 +29,5 @@ properties:
     type: string
   capacity:
     type: integer
+    minimum: 1
 type: object

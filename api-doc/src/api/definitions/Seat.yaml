@@ -26,9 +26,10 @@ properties:
     type: number
     format: double
     faker: 'finance.amount'
+    minimum: 1
   status:
     type: string
-    enum: ['ON_HOLD', 'SOLD', 'CANCELED']
+    enum: ['ON_HOLD', 'SOLD', 'CANCELLED']
   type:
     type: string
     enum: ['GENERAL', 'SEAT']

@@ -45,7 +45,7 @@ public class GenericService<E, P, R extends JpaRepository<E, UUID>> {
 
   public P savePojo(final P p) {
     E e = mapPojoToEntity.apply(p);
-    e = r.save(e);
+    e = save(e);
     return mapEntityToPojo.apply(e);
   }
 

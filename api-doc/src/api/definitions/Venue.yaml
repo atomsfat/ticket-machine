@@ -5,7 +5,8 @@ required:
   - city
   - country
   - state
-  - address
+  - street
+  - county
 properties:
   id:
     type: string
@@ -37,9 +38,21 @@ properties:
     faker: 'address.state'
     maxLength: 255
     minLength: 5
-  address:
+  street:
     type: string
-    faker: 'address.streetAddress'
     maxLength: 255
     minLength: 5
+    faker: 'address.streetAddress'
+  county:
+    type: string
+    maxLenth: 255
+    minLength: 5
+    faker: 'address.county'
+  hrefMaps:
+    type: string
+    maxLenth: 255
+    minLength: 5
+    faker: 'internet.url'
+
+
 type: object
