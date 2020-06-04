@@ -32,7 +32,7 @@
   <!--module name="JavadocPackage"/ -->
 
   <module name="SuppressionFilter">
-    <property name="file" value="checkstyleignore.xml" />
+    <property name="file" value="${config_loc}/suppression.xml" />
   </module>
 
   <!-- Checks whether files end with a new line.                        -->
@@ -60,6 +60,10 @@
     <property name="minimum" value="0"/>
     <property name="maximum" value="0"/>
     <property name="message" value="Line has trailing spaces."/>
+  </module>
+
+  <module name="LineLength">
+    <property name="max" value="120"/>
   </module>
 
   <module name="TreeWalker">
@@ -115,9 +119,7 @@
 
     <!-- Checks for Size Violations.                    -->
     <!-- See http://checkstyle.sf.net/config_sizes.html -->
-    <module name="LineLength">
-      <property name="max" value="120"/>
-    </module>
+
     <module name="MethodLength"/>
     <module name="ParameterNumber"/>
 

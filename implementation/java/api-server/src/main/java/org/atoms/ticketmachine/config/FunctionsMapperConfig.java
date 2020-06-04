@@ -13,58 +13,63 @@ import org.springframework.context.annotation.Configuration;
 import java.util.function.Function;
 
 @Configuration
-public class FunctionsMapperConfig {
+public class
+FunctionsMapperConfig {
+
+  private final ModelMapper mapper;
 
   @Autowired
-  ModelMapper mapper;
+  public FunctionsMapperConfig(final ModelMapper mapper) {
+    this.mapper = mapper;
+  }
 
   @Bean
   Function<Customer, org.atoms.ticketmachine.pojos.Customer> mapCustomerEntityToPojo() {
-    return entity -> mapper.map(entity, org.atoms.ticketmachine.pojos.Customer.class);
+    return entity -> this.mapper.map(entity, org.atoms.ticketmachine.pojos.Customer.class);
   }
 
   @Bean
   Function<org.atoms.ticketmachine.pojos.Customer, Customer> mapCustomerPojoToEntity() {
-    return pojo -> mapper.map(pojo, Customer.class);
+    return pojo -> this.mapper.map(pojo, Customer.class);
   }
 
   @Bean
   Function<org.atoms.ticketmachine.pojos.Event, Event> mapEventPojoToEntity() {
-    return pojo -> mapper.map(pojo, Event.class);
+    return pojo -> this.mapper.map(pojo, Event.class);
   }
 
   @Bean
   Function<Event, org.atoms.ticketmachine.pojos.Event> mapEventEntityToPojo() {
-    return entity -> mapper.map(entity, org.atoms.ticketmachine.pojos.Event.class);
+    return entity -> this.mapper.map(entity, org.atoms.ticketmachine.pojos.Event.class);
   }
 
   @Bean
   Function<Ticket, org.atoms.ticketmachine.pojos.Ticket> mapTicketEntityToPojo() {
-    return entity -> mapper.map(entity, org.atoms.ticketmachine.pojos.Ticket.class);
+    return entity -> this.mapper.map(entity, org.atoms.ticketmachine.pojos.Ticket.class);
   }
 
   @Bean
   Function<org.atoms.ticketmachine.pojos.Ticket, Ticket> mapTicketPojoToEntity() {
-    return pojo -> mapper.map(pojo, Ticket.class);
+    return pojo -> this.mapper.map(pojo, Ticket.class);
   }
 
   @Bean
   Function<Purchase, org.atoms.ticketmachine.pojos.Purchase> mapPurchaseEntityToPojo() {
-    return entity -> mapper.map(entity, org.atoms.ticketmachine.pojos.Purchase.class);
+    return entity -> this.mapper.map(entity, org.atoms.ticketmachine.pojos.Purchase.class);
   }
 
   @Bean
   Function<org.atoms.ticketmachine.pojos.Purchase, Purchase> mapPurchasePojoToEntity() {
-    return pojo -> mapper.map(pojo, Purchase.class);
+    return pojo -> this.mapper.map(pojo, Purchase.class);
   }
 
   @Bean
   Function<Venue, org.atoms.ticketmachine.pojos.Venue> mapVenueEntityToPojo() {
-    return entity -> mapper.map(entity, org.atoms.ticketmachine.pojos.Venue.class);
+    return entity -> this.mapper.map(entity, org.atoms.ticketmachine.pojos.Venue.class);
   }
 
   @Bean
   Function<org.atoms.ticketmachine.pojos.Venue, Venue> mapVenuePojoToEntity() {
-    return pojo -> mapper.map(pojo, Venue.class);
+    return pojo -> this.mapper.map(pojo, Venue.class);
   }
 }

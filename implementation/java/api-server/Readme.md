@@ -8,7 +8,7 @@ It supports a query language for JSON [Jmespath](http://jmespath.org/), just lik
 
 ## Project structure
 
-The project tries to organize things around around *Features*, Not Roles.
+The project tries to organize things around *Features*, Not Roles.
 
 * Roles
 
@@ -28,7 +28,7 @@ The project tries to organize things around around *Features*, Not Roles.
   ```  
  To understand how the venue endpoint works, you have to open up three different directories.
  
- Instead of this, the project is organized around features. It makes understanding a lot easier:
+ Instead of this, the project is being organized around features. It makes understanding a lot easier:
  
  * Features
    ```

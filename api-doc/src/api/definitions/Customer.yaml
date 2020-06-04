@@ -18,4 +18,8 @@ properties:
   pool_name:
     type: string
     maxLength: 255
+  createDate:
+    type: string
+    format: date-time
+    faker: 'date.soon'
 type: object

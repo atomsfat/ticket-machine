@@ -6,20 +6,16 @@ buildscript {
 
   }
 }
+
+
+
 allprojects {
   apply plugin: 'java'
 
-
-  if (!it.name.equals('api-pojos')) {
+  if (it.name != 'api-pojos') {
     apply plugin: 'checkstyle'
-    checkstyle{
-      sourceSets = []
-      configFile = rootProject.file('checkstyle.xml')
-      showViolations = true
-      ignoreFailures = false
-    }
 
-    check.dependsOn('checkstyleMain')
+
 
   }
 
