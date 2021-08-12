@@ -1,9 +1,9 @@
 plugins {
-  id 'org.hidetake.swagger.generator' version '2.18.2'
+  id 'org.hidetake.swagger.generator' version "${swaggerPluginGeneratorVersion}"
 }
 
 dependencies {
-  swaggerCodegen 'io.swagger:swagger-codegen-cli:2.4.2'
+  swaggerCodegen "io.swagger:swagger-codegen-cli:${swaggerCodeGenCliVersion}"
 }
 
 swaggerSources {
@@ -23,14 +23,13 @@ sourceSets {
   }
 }
 
-
 compileJava {
   dependsOn(generateSwaggerCode)
 }
 
 dependencies {
   implementation(platform("org.springframework.boot:spring-boot-dependencies:${springBootVersion}"))
-  implementation 'io.swagger:swagger-annotations:1.5.18'
+  implementation "io.swagger:swagger-annotations:${swaggerAnnotationVersion}"
   implementation 'javax.validation:validation-api'
   implementation 'org.springframework.boot:spring-boot-starter-validation'
   implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
