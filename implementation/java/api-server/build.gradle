@@ -1,6 +1,6 @@
 plugins {
-  id 'org.springframework.boot' version '2.3.0.RELEASE'
-  id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+  id "org.springframework.boot" version "${springBootVersion}"
+  id 'io.spring.dependency-management' version "${springDependecyMgmt}"
   id 'java'
 }
 
@@ -10,21 +10,18 @@ configurations {
   }
 }
 
-repositories {
-  mavenCentral()
-}
-
 
 dependencies {
   implementation project(':api-pojos')
+  implementation('org.springframework.boot:spring-boot-starter-web')
   implementation('org.springframework.boot:spring-boot-starter-data-jpa')
   // https://vladmihalcea.com/how-to-map-json-objects-using-generic-hibernate-types/
   implementation('com.vladmihalcea:hibernate-types-52:2.9.11')
-  implementation('org.springframework.boot:spring-boot-starter-web')
   // compile('org.springframework.cloud:spring-cloud-starter-aws-jdbc')
   implementation('io.burt:jmespath-jackson:0.2.1')
   implementation('org.modelmapper:modelmapper:2.2.0')
   implementation('javax.json:javax.json-api')
+  implementation 'javax.validation:validation-api'
   runtimeOnly('org.postgresql:postgresql')
   annotationProcessor('org.projectlombok:lombok')
   compileOnly('org.projectlombok:lombok')
@@ -33,17 +30,7 @@ dependencies {
   }
 }
 
-configurations {
-  umlDoclet
-}
-
-dependencies {
-  umlDoclet "nl.talsmasoftware:umldoclet:2.0.6"
-}
-
 javadoc {
   source = sourceSets.main.allJava
-  options.docletpath = configurations.umlDoclet.files.asType(List)
-  options.doclet = "nl.talsmasoftware.umldoclet.UMLDoclet"
 //  options.addStringOption "additionalParamName", "additionalParamValue"
 }

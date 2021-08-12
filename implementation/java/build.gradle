@@ -3,31 +3,23 @@ buildscript {
     mavenCentral()
   }
   dependencies {
-
   }
 }
 
-
-
+apply plugin:'idea'
 allprojects {
   apply plugin: 'java'
-
+  apply plugin:'idea'
   if (it.name != 'api-pojos') {
     apply plugin: 'checkstyle'
-
-
-
   }
 
   repositories {
-    maven { url "http://repo.spring.io/libs-release"}
+    maven { url "https://repo.spring.io/libs-release"}
     mavenCentral()
   }
-
-
   group = project.groupId
   sourceCompatibility = project.sourceCompatibility
   targetCompatibility = project.sourceCompatibility
   version = project.version
-
 }

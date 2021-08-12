@@ -18,3 +18,5 @@ api-doc/node_modules/extglob/lib/.DS_Store
 api-doc/node_modules/micromatch/lib/.DS_Store
 api-doc/node_modules/swagger-ui/node_modules/webpack-dev-server/ssl/.DS_Store
 implementation/.DS_Store
+ticket-machine.ipr
+ticket-machine.iws

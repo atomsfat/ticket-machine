@@ -5,6 +5,7 @@
   "main": "dist/api-spec.yaml",
   "scripts": {
     "start": "webpack-dev-server --config build/webpack.config.js --open --progress --color --port=9000 --mode=development",
+    "build": "webpack --config build/webpack.config.js --progress",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "node_modules/.bin/eslint ."
   },
